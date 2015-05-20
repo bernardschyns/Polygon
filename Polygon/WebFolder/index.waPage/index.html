@@ -15,7 +15,7 @@
         <meta name="WAF.config.loadJS" content="/scripts/redraw.js"/>
         <meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
     
-		<meta data-type="dataSource" data-lib="WAF" data-source="Polygon" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="polygon" content="polygon"/></head>
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Polygon" data-lib="WAF" data-id="polygon" data-dataType="string" data-autoLoad="true" content="polygon"/></head>
     
     <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-title="Main Page" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
         <input type="text" id="text" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-left="true" class="waf-widget waf-textField"/>
@@ -28,7 +28,8 @@
  	 	
  	 	
  	 	</div>
-	<input id="textField1" data-type="textField" data-lib="WAF" type="text" data-binding="polygon.ID" class="waf-widget waf-textField" data-label="ID" data-label-position="left" data-multiline="false" data-readOnly="false" data-password="false" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false"/>
-		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script><label id="label1" data-type="label" data-lib="WAF" for="textField1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-textfield" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false">ID</label></body>
+	<input type="text" id="textField1" data-type="textField" data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF" data-label-position="left" data-label="ID" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" data-binding="polygon.ID" class="waf-widget waf-textField"/>
+		<label id="label1" for="textField1" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label waf-label-textfield">ID</label>
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>	</body>
 
 </html>
