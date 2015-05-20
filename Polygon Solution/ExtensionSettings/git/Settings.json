@@ -1,6 +1,6 @@
 ﻿{
 	"serverType": "github",
 	"gitURL": "https://github.com/bernardschyns/",
-	"gitIsPrivateRepository": "false",
+	"gitIsPrivateRepository": "true",
 	"gitEmail": "bernard.schyns@gmail.com"
 }
