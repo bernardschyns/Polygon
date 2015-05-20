@@ -20,6 +20,10 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/richText",
+			"type": "widget"
+		},
+		{
 			"id": "default",
 			"type": "theme"
 		},
