@@ -40,18 +40,13 @@
 				{
 					"name": "Polygon",
 					"kind": "storage",
+					"matchColumn": "Attrs, Attributs",
 					"scope": "public",
 					"type": "string"
-				},
-				{
-					"name": "Attrs",
-					"scope": "public",
-					"type": "object",
-					"kind": "storage",
-					"matchColumn": "Attributs"
 				}
 			]
 		}
 	],
+	"publishAsJSGlobal": true,
 	"type": []
 }

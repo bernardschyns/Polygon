@@ -5,7 +5,7 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 $('#container1').height($(window).height());
 $('#container1').width($(window).width());
 
-debugger;
+//debugger;
 var draw = Raphael(0, 0, $(window).width(), $(window).height());
 var path = draw.path();
 path.attr({
@@ -14,15 +14,13 @@ path.attr({
     fill: '#147EDB'
 });
 sources.polygon.addNewElement();
-sources.polygon.Polygon=path[0].toString();
-
-sources.polygon.Attrs=path.attrs;
+sources.polygon.Polygon = path.node.attributes.d.value;
 sources.polygon.save();
 //sources.polygon.sync();
 
 // This function sets the path from the input text
 function redraw() {
-	debugger;
+//	debugger;
     path.attr({
         path: $('#text').val()
     });
@@ -57,11 +55,18 @@ function redraw() {
 	{// @endlock
  		 var oldpath = $('#text').val();
   		$('#text').val(oldpath + ' Z');
+  		sources.polygon.Polygon=oldpath + ' Z';
+  		sources.polygon.save();
+
+  		sources.polygon.addNewElement();
+
+
   		redraw();
 	};// @lock
 
 	container1.click = function container1_click (event)// @startlock
 	{// @endlock
+		  debugger;
 		  var x = event.pageX;
 		  var y = event.pageY;
 		  var oldpath = $('#text').val();
@@ -71,7 +76,8 @@ function redraw() {
 		  else {
 		      $('#text').val(oldpath + ' ' + x + ' ' + y);
 		  }
-		  redraw();
+			sources.polygon.Polygon = path.node.attributes.d.value;
+			redraw();
 	};// @lock
 
 // @region eventManager// @startlock
